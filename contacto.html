@@ -1,98 +1,36 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="estilos.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Tienda de mascotas</title>
+	<title>formulario</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
+<body>
+<br>
+<br>
+	<div class="form">
+		<form action="guardar.php" method="POST">
 
+<label for="nombre"><center>Su nombre</center></label>
+<br>
+<input type="text" name="nombre" placeholder="Nombre" required="">
+<br>
+<label for="correo"><center>Direccion de correo</center></label>
+<br>
+<input type="text" name="correo" placeholder="Mail@mail.com" required="">
+<br>
+<label for="mensaje"><center>Mensaje</center></label>
+<br>
+<textarea name="mensaje" placeholder="Mensaje" required=""></textarea>
+<br>
+<br>
+<br>
+<input type="submit" value="Enviar">
+<input type="reset" value="Limpiar">
 
-<header>
-	<h2 >TIENDA DE MASCOTAS</h2>
-	<nav>	
-	<ul>
-	<li><a href="index.html">Home</a></li>
-
-	<li><a href="animales.html">Animales</a></li>
-	<li><a href="contacto.html">Contacto</a></li>
-	<li><a href="nosotros.html">Nosotros</a></li>
-
-	
-	
-	</ul>
-	</nav>	
-
-</header>
-<style>
-body {    background: url(../img/bg.jpeg);
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed;}
-* {margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing:border-box;}
-
-input[type=text], select, textarea {
-  width: 59%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-.container {
-    display: block;
-    font-size: 16px;
-    font-family: Roboto;
-    position: relative;
-}
-</style>
-</head>
-<body style="text-align: center;">
-
-<form action="">
-            <div class="form-header">
-                <h1 class="form-title">C<span>ontacto</span></h1>
-
-<div class="container">
-    <label for="nombre">Nombre</label>
-    <input type="text" id="nombre" name="firstname" >
-
-    <label for="direccion">Direccion</label>
-    <input type="text" id="direccion" name="lastname" >
-        <label for="email"> Email</label>
-    <input type="text" id="email
-    " name="lastname" >
-
-
-    <label for="mensaje">Mensaje</label>
-    <textarea id="subject" name="mensaje" style="height:200px"></textarea>
-
-    <input type="submit" value="Enviar consultar">
-  </form>
-</div>
+		</form>
+	</div>
 
 </body>
-
-
-
 </html>
